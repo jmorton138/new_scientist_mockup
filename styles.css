@@ -1,0 +1,29 @@
+.wrapper {
+    display: grid;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+}
+.body-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.sidebar-nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.sidebar-item {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+div {
+    border: 1px solid red;
+
+}
