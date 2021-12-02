@@ -52,11 +52,27 @@ body {
     grid-template-columns: repeat(15, 1fr); */
     font-size: 20px;
     justify-content: space-between;
-    padding: 10px 0px;
     font-weight: 700;
     color: #002837;
     font-family: Helvetica;
 
+}
+.nav-item {
+    padding: 10px 0px;
+    margin: 0px;
+    border-bottom: none;
+    transition: border-bottom 0.3s;
+
+}
+
+.nav-item:hover {
+    border-bottom: 7px black solid;
+    transition: 0.3s;
+
+}
+
+.border-bttm {
+    border-bottom: 7px black solid;
 }
 .line-break {
     border-bottom: 1px solid #bfbfbf;
@@ -68,6 +84,44 @@ body {
 .article h1 {
     font-size: 50px;
     margin-top: 0px;
+    margin-bottom: 10px;
+}
+.icons {
+    margin-top: 0px;
+}
+
+.further-reading {
+    margin-top: 10px;
+    color:#4D4D4D
+}
+
+.further-reading a {
+    background-color: #005587;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 5px;
+    margin: 3px;
+
+}
+
+.further-reading a:hover {
+    background: #288eb7;
+}
+
+.blue-link {
+    color: #00b3e5
+}
+
+
+.reference p {
+    font-size: 18px;
+}
+.reference .ref {
+    font-family: Helvetica, sans-serif;
 }
 
 .blue-item {
@@ -80,7 +134,9 @@ body {
 .sidebar {
     /* width: 18.75rem; */
     margin-left: 25px;
-
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 .sidebar-nav {
@@ -89,12 +145,16 @@ body {
 
 }
 .sidebar-nav-item {
-    padding: 13px;
+    padding: 13px 8px;
     font-size: 15px;
     font-weight: bold;
     background-color: #F5F5F5;
 
+}
 
+.hvr:hover {
+    background-color: #ddd;
+    transition: 0.3s;
 }
 .sidebar-item {
     display: grid;
@@ -240,6 +300,7 @@ p {
 .footer {
     margin-top: 30px;
     background-color: #F5F5F5;
+    padding: 30px;
     /* position: absolute;
     bottom: 0;
     left: 0;
@@ -259,7 +320,6 @@ form {
 }
 
 .footer h2 {
-    padding-top: 30px;
 
     font-family: Helvetica, sans-serif;
 }
@@ -323,9 +383,9 @@ form {
 }
 .btn-container {
     position: relative;
-
 }
-/* * {
+
+* {
     border: 1px solid red;
 
-} */
+}
