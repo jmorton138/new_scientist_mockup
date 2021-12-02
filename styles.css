@@ -45,6 +45,7 @@ body {
 
 .newsletter h3 {
     color: #00b3e5;
+    font-family: Helvetica;
 }
 .navbar {
     display: flex;
@@ -347,6 +348,10 @@ form {
     border: none;
 }
 
+.footer input[type=submit]:hover {
+    background-color: #193c5b;
+}
+
 .footer ul {
     margin: auto;
     width: 50%;
@@ -364,6 +369,9 @@ form {
     padding: 10px;
 }
 
+.footer-link:hover {
+    color: #00b3e5;
+}
 .manage-pref {
     background-color: #005587;
     color: white;
@@ -385,7 +393,30 @@ form {
     position: relative;
 }
 
-* {
+.manage-pref:hover {
+    background: #288eb7;
+}
+
+.footer-section-get-it {
+    margin: auto; 
+    margin-top: 70px;
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 40px;
+    
+}
+
+.footer-section-get-it .app-img {
+    width: 150px;
+}
+.footer-cta {
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+/* * {
     border: 1px solid red;
 
-}
+} */
